@@ -10,6 +10,10 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'preservim/nerdtree'
+Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-fugitive'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -29,3 +33,6 @@ filetype plugin indent on    " required
 :set tabstop=4
 :set shiftwidth=4
 :set expandtab
+
+let g:airline_powerline_fonts = 1
+let g:airline_theme='bubblegum'
