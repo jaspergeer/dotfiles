@@ -33,6 +33,7 @@ filetype plugin indent on    " required
 :set tabstop=4
 :set shiftwidth=4
 :set expandtab
+:set number
 :syntax on
 
 let g:airline_powerline_fonts = 1
