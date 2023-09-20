@@ -20,6 +20,8 @@
 
 ;; LANGUAGES
 
+(setq-default tab-width 2)
+
 ;; C/C++
 (c-add-style "microsoft"
              '("stroustrup"
@@ -30,7 +32,6 @@
                 (arglist-cont-nonempty . +)
                 (template-args-cont . +))))
 (setq c-default-style "microsoft")
-(setq-default c-basic-offset 2)
 
 ;; Haskell
 (after! lsp-haskell
