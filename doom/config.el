@@ -3,11 +3,13 @@
       user-mail-address "jasper.geer@gmail.com")
 
 ;; Appearance
-(setq doom-font (font-spec :family "FiraCode Nerd Font" :size 13)
-      doom-big-font (font-spec :family "FiraCode Nerd Font" :size 13)
-      doom-variable-pitch-font (font-spec :family "FiraCode Nerd Font" :size 13)
-      doom-serif-font (font-spec :family "FiraCode Nerd Font" :size 13))
+(setq doom-font (font-spec :family "DejaVuSansM Nerd Font" :size 13)
+      doom-big-font (font-spec :family "DejaVuSansM Nerd Font" :size 13)
+      doom-variable-pitch-font (font-spec :family "DejaVuSansM Nerd Font" :size 13)
+      doom-serif-font (font-spec :family "DejaVuSansM Nerd Font" :size 13)
+      doom-symbol-font (font-spec :family "Latin Modern Math" :size 13))
 
+;; (setq doom-theme 'doom-oksolar-light)
 (setq doom-theme 'doom-one)
 
 (add-to-list 'initial-frame-alist '(fullscreen . maximized))
@@ -18,9 +20,10 @@
 (setq org-directory "~/org/"
       org-agenda-files (list org-directory))
 
-;; LANGUAGES
+;; Editing
 
-(setq-default tab-width 2)
+(setq tab-width 2)
+(setq indent-tabs-mode t)
 
 ;; C/C++
 (c-add-style "microsoft"
@@ -40,3 +43,13 @@
 ;; Bison
 (after! bison-mode
   (add-to-list 'auto-mode-alist '("*.y" . bison-mode)))
+
+;; auto-load agda-mode for .agda and .lagda.md
+(setq auto-mode-alist
+   (append
+     '(("\\.agda\\'" . agda2-mode)
+       ("\\.lagda.md\\'" . agda2-mode))
+     auto-mode-alist))
+
+;; LaTeX
+(add-hook 'LaTeX-mode-hook 'turn-on-auto-fill)
