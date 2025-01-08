@@ -93,36 +93,44 @@ outer.right =      8
 # end tell'
 # '''
 
-ctrl-alt-shift-v = 'layout horizontal vertical'
+alt-v = 'join-with down'
+alt-s = 'join-with right'
+alt-r = 'layout horizontal vertical'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#focus
-ctrl-alt-shift-h = 'focus left'
-ctrl-alt-shift-j = 'focus down'
-ctrl-alt-shift-k = 'focus up'
-ctrl-alt-shift-l = 'focus right'
+alt-h = 'focus left'
+alt-j = 'focus down'
+alt-k = 'focus up'
+alt-l = 'focus right'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move
-ctrl-alt-shift-left = 'move left'
-ctrl-alt-shift-down = 'move down'
-ctrl-alt-shift-up = 'move up'
-ctrl-alt-shift-right = 'move right'
+alt-left = 'move left'
+alt-down = 'move down'
+alt-up = 'move up'
+alt-right = 'move right'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#resize
-ctrl-alt-shift-p = 'resize smart -50'
-ctrl-alt-shift-backspace = 'resize smart +50'
+alt-minus = 'resize smart -50'
+alt-equal = 'resize smart +50'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
-ctrl-alt-shift-w = 'workspace-back-and-forth'
+alt-w = 'workspace-back-and-forth'
 
-ctrl-alt-cmd-shift-right = 'workspace --wrap-around next'
-ctrl-alt-cmd-shift-left = 'workspace --wrap-around prev'
+alt-shift-rightSquareBracket = 'move-node-to-workspace --wrap-around next'
+alt-shift-leftSquareBracket = 'move-node-to-workspace --wrap-around prev'
 
-ctrl-alt-shift-1 = 'workspace 1'
-ctrl-alt-shift-2 = 'workspace 2'
-ctrl-alt-shift-3 = 'workspace 3'
-ctrl-alt-shift-4 = 'workspace 4'
-ctrl-alt-shift-5 = 'workspace 5'
-ctrl-alt-shift-6 = 'workspace 6'
-ctrl-alt-shift-7 = 'workspace 7'
-ctrl-alt-shift-8 = 'workspace 8'
-ctrl-alt-shift-9 = 'workspace 9'
+alt-rightSquareBracket = 'workspace --wrap-around next'
+alt-leftSquareBracket = 'workspace --wrap-around prev'
+
+alt-shift-left = 'workspace --wrap-around next'
+alt-shift-right = 'workspace --wrap-around prev'
+
+alt-1 = 'workspace 1'
+alt-2 = 'workspace 2'
+alt-3 = 'workspace 3'
+alt-4 = 'workspace 4'
+alt-5 = 'workspace 5'
+alt-6 = 'workspace 6'
+alt-7 = 'workspace 7'
+alt-8 = 'workspace 8'
+alt-9 = 'workspace 9'
