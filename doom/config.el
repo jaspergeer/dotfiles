@@ -12,8 +12,6 @@
 ;; (setq doom-theme 'doom-oksolar-light)
 (setq doom-theme 'doom-one)
 
-(add-to-list 'initial-frame-alist '(fullscreen . maximized))
-
 (setq display-line-numbers-type t)
 
 ;; org-mode
@@ -21,7 +19,6 @@
       org-agenda-files (list org-directory))
 
 ;; Editing
-
 (setq tab-width 2)
 (setq indent-tabs-mode t)
 

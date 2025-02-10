@@ -1,0 +1,31 @@
+# windows
+
+## navigation
+alt - h : yabai -m window --focus west
+alt - j : yabai -m window --focus south
+alt - k : yabai -m window --focus north
+alt - l : yabai -m window --focus east
+alt - w : yabai -m window --focus recent
+
+## management
+alt - left  : yabai -m window --swap west
+alt - down  : yabai -m window --swap south
+alt - up    : yabai -m window --swap north
+alt - right : yabai -m window --swap east
+alt - n     : yabai -m window --warp south
+alt - s     : yabai -m window --warp east
+
+# spaces
+
+## navigation
+alt - 0x1E : yabai -m space --focus next || yabai -m space --focus first
+alt - 0x21 : yabai -m space --focus prev || yabai -m space --focus last
+
+## management
+alt - n            : yabai -m space --create; yabai -m space --focus next
+alt - d            : yabai -m space --destroy
+alt + shift - 0x1E : yabai -m window --space next; yabai -m space --focus next
+alt + shift - 0x21 : yabai -m window --space prev; yabai -m space --focus prev
+
+# toggle horizontal/vertical split
+alt - v : yabai -m window --toggle split

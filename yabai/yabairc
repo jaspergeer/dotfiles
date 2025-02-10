@@ -1,0 +1,26 @@
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+sudo yabai --load-sa
+
+# managed tiling layout
+yabai -m config layout bsp
+
+# don't get in the way of sketchybar
+yabai -m config external_bar all:0:25
+
+# windows
+
+## padding
+WINDOW_PADDING=8
+
+yabai -m config top_padding    ${WINDOW_PADDING}
+yabai -m config bottom_padding ${WINDOW_PADDING}
+yabai -m config left_padding   ${WINDOW_PADDING}
+yabai -m config right_padding  ${WINDOW_PADDING}
+yabai -m config window_gap     ${WINDOW_PADDING}
+
+## shadows
+yabai -m config window_shadow off
+
+# mouse
+yabai -m config focus_follows_mouse autofocus
+yabai -m config mouse_follows_focus on
